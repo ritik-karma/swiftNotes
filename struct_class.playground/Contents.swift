@@ -25,7 +25,7 @@ struct student {
     var surname = "karma"   //Given an initial value which is nt mandatory
     lazy var species = "human"
 
-    static var id = 10 // 'Static' means It is shared among all instances of the structure. There is only one copy of this variable, regardless of how many instances of the structure are created.Static variables are accessed and modified through the structure itself, not through instances.
+    static var id = 10 // 'Static' means It is shared among all instances(object) of the structure. There is only one copy of this variable, regardless of how many instances of the structure are created.Static variables are accessed and modified through the structure itself, not through instances.
     
     
     

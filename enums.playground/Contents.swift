@@ -9,6 +9,7 @@
 // MARK: -> Standard Enums (value types)
 
 enum ColourScheme {
+    static let x = 5   //static can be used for making stored properties in the enum
     case light
     case dark
     case custom
