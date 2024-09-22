@@ -59,6 +59,15 @@ else {
 ///can do same work with  simple ifelse also by checking if nill...
 
 
+//also can use this way also
+/*
+ if
+    let path = ......  ,
+    let data = ......path {
+ ....
+ }
+ */
+
 //MARK:  guard (like a wall in func)
 
 func oldage () {

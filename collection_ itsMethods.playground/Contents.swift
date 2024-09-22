@@ -84,6 +84,10 @@ for (key,value) in listCont {
     print("key is \(key) and value are \(value). ")
 }
 
+for key in listCont.keys {
+    //Use .keys for traversing only keys
+}
+
 //
 
 

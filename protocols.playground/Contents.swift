@@ -1,10 +1,21 @@
-import Foundation
+import SwiftUI
 
 
 // protocols:  (set of rules) (used in both classes & structs)
 /*
  Protocol extensions can be used to defining a function
  */
+
+//MARK: - PRE-DEFINED PROTOCOL
+
+//MARK: Codable (Encodable & Decodable)
+
+
+
+
+
+
+//MARK: - CUSTOM PROTOCOL
 protocol protocolName {}
 protocol carDetail {
     ///cannot use or define stored properties / func directly in protocols use { get } or { get set }

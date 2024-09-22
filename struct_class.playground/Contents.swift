@@ -132,7 +132,7 @@ struct Rectangle2 {
     var area: Double
 
     init(width: Double, height: Double) {
-        self.width = width
+        self.width = width              ///self refers that we r talking about this structs var
         self.height = height
         self.area = width * height
     }
@@ -195,7 +195,7 @@ progres1.pay = 1000  ///Output: my code amount is 500 /n my code amount is befor
 ///Multiple inheritence is not allowed
 ///Let can also be muatable in classes
 /*
- initialization is compulsary in class
+ initialization is compulsary in class because its refrence type. (It needs something as refrence)
  
  'init' in classes = Classes do not get a memberwise initializer by default.You must define an init method to set up properties and call super.init() if the class inherits from another class.
     For init we can use ‘?’ for initially nill OR give Default value insted of self initialization but should be created as var not let to change further.
@@ -217,9 +217,9 @@ class dev {
     var sallary: Int
     
     init (name: String, sallary: Int) {
-        self.name = name
+        self.name = name       ///Input name  will be given to self.name means class's name var & can be diffrent for each obj
         self.sallary = sallary
-        self.sallary = 5
+        self.sallary = 5        //default sallary will be 5
         }
     
     convenience init (name: String){
@@ -275,6 +275,16 @@ T04.job_title
 
 ritik.say()
 ritik.sayHello()///it is an inherite property
+
+//MARK: final:  prevent a class from being subclassed
+final class Vehicle {
+    var speed: Int = 0
+}
+// The following will result in a compilation error:
+//class Car: Vehicle {
+//    // Error: Cannot inherit from 'Vehicle' because it is marked 'final'
+//}
+
 
 //MARK:  Memory ARC(Automatic Reference Counting) (Only in classes)
 /*
