@@ -108,6 +108,20 @@ geneFunc(m: 5, n: 34, o: "default")
 geneFunc(m: 5.5944, n: 1.0000)
 geneFunc(m: true, n: false)
 
+//for specific generic
+func speGenFunc<T: Numeric> (_ z: T, _ x : T) -> T {
+    return z + x
+}
+speGenFunc(45.90, 99.9)
+
+
+struct custom {
+    static func val(_ i: Int){ ///static func can be accessed w/o creating any obj of class etc
+        print("its \(i)")
+    }
+}
+custom.val(10)
+
 
 //MARK: - Closures
 

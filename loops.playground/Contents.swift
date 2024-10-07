@@ -1,3 +1,12 @@
+MARK:
+//NOTE: Try to avoid nested loops o(n^2) because it is inefficient for large test cases. try to reach element directly on it o(n).
+
+
+
+
+
+
+
 //MARK: - for in
 /*
  for (iteration) in (range) {
@@ -76,7 +85,7 @@ for i in 0..<10 {
     }
     print(i)
 }
-//MARK: -> For iterating in array
+//MARK: > For iterating in array
 
 ///NOTE: If you don't use any functionality with array name then it will iterate with index values instead of index only.
 
@@ -96,12 +105,12 @@ for i in 0..<price.count {             //don't make space bw <p, i iterate value
         price[i] -= dis                          //will reduce prices by discount on the array ((var) it is mutable array )
 }
 
-//MARK: >   where
+//MARK:  >   where
 for i in price where i > 45 {
     
     print("where ex \(i)")
 }
-//MARK: ->
+//MARK: >
 
 
 //ex find even or odd
