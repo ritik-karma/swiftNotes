@@ -1,19 +1,20 @@
 
 
 func maxProfit(_ prices: [Int]) -> Int {
-    var profit = 0
-    var count = 1
-    for buyIndex in 0..<prices.count {
-        for sellIndex in count..<prices.count{
-            var tempProfit = 0
-            tempProfit = prices[sellIndex] - prices[buyIndex]
-            if (tempProfit > profit && tempProfit > 0) {
-                profit = tempProfit
-            }
-        }
-        count += 1
+    if prices.isEmpty { return 0}
+    var buyIndex = 0
+    var sellIndex = 1
+    var maxProfit = 0
+    
+    while (sellIndex < prices.count ) {
+          let buy = [buyIndex]
+        let sell = [sellIndex]
+        
+        
+        
     }
-    return profit
+        
+    return 0
 }
 
 
