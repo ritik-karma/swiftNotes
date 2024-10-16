@@ -20,6 +20,9 @@ var distance: Distance = 5.0
 var num1 = 1
 var num2 = 2
 
+var maxNum = max(num1, num2) //it will take max element automatically
+maxNum
+
 num1 = num2 ///Pouring num2 into num1 container
 
 

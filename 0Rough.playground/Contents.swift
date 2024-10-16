@@ -7,14 +7,21 @@ func maxProfit(_ prices: [Int]) -> Int {
     var maxProfit = 0
     
     while (sellIndex < prices.count ) {
-          let buy = [buyIndex]
-        let sell = [sellIndex]
+        let buy = prices[buyIndex]
+        let sell = prices[sellIndex]
+        let profit = sell - buy
         
+        if (buy > sell) {
+            buyIndex += 1
+        } else {
+            maxProfit = max(maxProfit, profit)
+            sellIndex += 1
+        }
         
         
     }
         
-    return 0
+    return maxProfit
 }
 
 
