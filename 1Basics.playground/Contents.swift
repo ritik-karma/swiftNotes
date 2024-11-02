@@ -160,3 +160,7 @@ if let myNum = num0 as? Int {
 //    •    Provides more detailed and descriptive output.
 //    •    Particularly useful for debugging purposes.
 //    •    Outputs additional information for complex data types, such as describing optionals and custom types.
+
+//MARK: - mark
+//TODO:  todo
+//FIXME: fixme  //^+6 for quick shortcut

@@ -17,11 +17,12 @@ import Foundation
 
 ///Concurrent == async
 
-
+//MARK: Keywords
 ///global()     for entire system
 ///sync()        syncrounous (Run sequentially)
 ///async()      asyncrounus (run parallelly)
-///await()       wiat till async task is completed
+///try              try handles any errors thrown by the loadTransferable method. If an error occurs, it can be caught in a do-catch block or passed up the chain if this function itself is marked with throws.
+///await            Indicates that the function being called is asynchronous and needs to be awaited, meaning it will pause the current task until the async function completes.
 
 
 DispatchQueue.global().sync(){

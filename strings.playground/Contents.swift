@@ -42,3 +42,30 @@ var num = 4
 
 String(num)    //for conveting basic types into string
 String(describing: num) //for some complex ones
+
+//MARK: -> String Traversing
+
+var myString = "Hello, World!"
+
+
+
+//MARK: Direct
+for char in name {
+    print(char)
+}
+
+print("---------")
+
+//MARK: Using Indices
+
+for i in 0..<myString.count {
+    let currentIndex = myString.index(myString.startIndex, offsetBy: i)  ///In this scenerio 'i' will be the index that are traversing
+    let nextIndex = myString.index(after: currentIndex)
+    
+    if myString[currentIndex] == "e" && i < myString.count - 1 && myString[nextIndex] == "x" {
+        print("Found 'e' followed by 'x'")
+    }
+}
+
+
+

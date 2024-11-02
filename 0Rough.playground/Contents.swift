@@ -1,30 +1,30 @@
-
-
-func maxProfit(_ prices: [Int]) -> Int {
-    if prices.isEmpty { return 0}
-    var buyIndex = 0
-    var sellIndex = 1
-    var maxProfit = 0
+func romanToInt(_ s: String) -> Int {
+    let romanValues: [Character: Int] = [
+        "I": 1, "V": 5, "X": 10, "L": 50,
+        "C": 100, "D": 500, "M": 1000
+    ]
     
-    while (sellIndex < prices.count ) {
-        let buy = prices[buyIndex]
-        let sell = prices[sellIndex]
-        let profit = sell - buy
-        
-        if (buy > sell) {
-            buyIndex += 1
-        } else {
-            maxProfit = max(maxProfit, profit)
-            sellIndex += 1
+    var output = 0
+    let characters = Array(s.uppercased()) // Convert to uppercase to handle case insensitivity
+    
+    for i in 0..<characters.count {
+        guard let currentValue = romanValues[characters[i]] else {
+            print("Invalid Input")
+            return -1 // Or some other error handling
         }
         
-        
+        // Check for subtraction condition
+        if i < characters.count - 1, let nextValue = romanValues[characters[i + 1]], currentValue < nextValue {
+            output -= currentValue // Subtract if the current value is less than the next
+        } else {
+            output += currentValue // Otherwise, add the current value
+        }
     }
-        
-    return maxProfit
+    
+    return output
 }
 
-
-var x = [7,6,4,3,1]
-x.max()
-maxProfit(x)
+// Example usage:
+let result = romanToInt("MCMXCIV") // Example: returns 1994
+print(result)
+    
