@@ -1,6 +1,6 @@
 
 //for model only camelcase allowed in swift & if api has snakecase use  decoding strategies.
-
+///Lazy var : Computed when it is called
 
 ///** Type Safety*: Type safety refers to a language's ability to catch and prevent type-related errors during compilation. In Swift, all values have a specific type, and the compiler ensures that operations are performed only on values of compatible types. This helps prevent many common types of bugs related to type mismatches.
 

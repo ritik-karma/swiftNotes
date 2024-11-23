@@ -18,6 +18,7 @@ import Foundation
 ///Concurrent == async
 
 //MARK: Keywords
+///task         unit of asynchronus work
 ///global()     for entire system
 ///sync()        syncrounous (Run sequentially)
 ///async()      asyncrounus (run parallelly)
