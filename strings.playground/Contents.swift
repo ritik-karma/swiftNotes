@@ -11,6 +11,8 @@ var eempty: String
 /*Type Inference with Initialization: This declares a variable ans and initializes it with an empty string. The type of eempty is inferred to be String from the initial value.
  Ready to Use: Since ans is initialized at the time of declaration, it can be used immediately.*/
 
+let arrayOfask = Array(ask) ///can apply more property like .uppercased
+
 var name = "Ritik"
 name.append(" karma")
 ///or
