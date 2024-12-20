@@ -10,10 +10,12 @@ struct Rectangle {
     var height: Double
     
     // Computed property to calculate the area of the rectangle
-    var area: Double {
+    var area: Double { ///and will return in type of double
         return width * height
     }
 }
-
+ 
 let rectangle = Rectangle(width: 10, height: 5)
 print(rectangle.area) // Output: 50
+
+
