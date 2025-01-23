@@ -24,7 +24,7 @@
 		F82C6CB12C967369005C1530 /* loops.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = loops.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F82C6CB22C967387005C1530 /* optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = optionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F82C6CB32C96739B005C1530 /* strings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = strings.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		F82C6CB42C9673B2005C1530 /* struct_class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = struct_class.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F82C6CB42C9673B2005C1530 /* struct_class_actors.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = struct_class_actors.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -48,7 +48,7 @@
 				F82C6CAB2C9672F6005C1530 /* protocols.playground */,
 				F82C6CAC2C967305005C1530 /* singleton.playground */,
 				F82C6CB32C96739B005C1530 /* strings.playground */,
-				F82C6CB42C9673B2005C1530 /* struct_class.playground */,
+				F82C6CB42C9673B2005C1530 /* struct_class_actors.playground */,
 			);
 			sourceTree = "<group>";
 		};

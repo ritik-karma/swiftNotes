@@ -375,3 +375,5 @@ n.isEven
 //MARK: - static var (in class struct enum)
 
 ///static var stores memory in heap instead of stack
+
+//MARK: -> Actors  (Similar like classes)
