@@ -192,6 +192,7 @@ progres1.pay = 1000  ///Output: my code amount is 500 /n my code amount is befor
 
 
 //MARK: - class (Refrence type)
+
 ///Multiple inheritence is not allowed
 ///Let can also be muatable in classes
 /*
@@ -210,6 +211,9 @@ progres1.pay = 1000  ///Output: my code amount is 500 /n my code amount is befor
  super = Use parent class var in current class
  override =  Used to overriding the parent class var or func in current class
  */
+
+
+//@MainActor if define that on class means complete class will be on main thread 
 
 class dev {
     var name: String
@@ -276,7 +280,7 @@ T04.job_title
 ritik.say()
 ritik.sayHello()///it is an inherite property
 
-//MARK: final:  prevent a class from being subclassed
+//MARK: final:  prevent a class from being subclassed or no one can inherite
 final class Vehicle {
     var speed: Int = 0
 }

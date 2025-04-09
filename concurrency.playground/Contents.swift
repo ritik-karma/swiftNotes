@@ -18,7 +18,7 @@ import Foundation
 ///Concurrent == async
 
 //MARK: Keywords
-///task         unit of asynchronus work
+///task         doing async (background task) in main Que or thread //main q is not background task
 ///global()     for entire system
 ///sync()        syncrounous (Run sequentially)
 ///async()      asyncrounus (run parallelly)

@@ -18,6 +18,10 @@ name.append(" karma")
 ///or
 name+"karma1234" ///only print won't add in actuall variable
 
+name.replacingOccurrences(of: " ", with: "") //Removing spaces (this can do alot more)
+//like this cleaned string (spacial char also removed with lowercased
+name.replacingOccurrences(of: "[^a-zA-Z0-9]", with: "", options: .regularExpression).lowercased()
+
 name
 name.count
 name.lowercased()
