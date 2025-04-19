@@ -1,24 +1,10 @@
-func isPalindrome(_ s: String) -> Bool {
-
-        var palindrome: String
-        var reversedPalindrome: String
-        var result = false
+func reverseString(_ s: inout [Character])  {
+            var i = 0
+    var j = s.count - 1
     
-    palindrome = s.replacingOccurrences(of: "[^a-zA-Z0-9]", with: "", options: .regularExpression).lowercased()
-    
-    
-     reversedPalindrome = String(palindrome.reversed())
-    
-    if palindrome == reversedPalindrome {
-        result = true
+    while (i<j) {
+        s.swapAt(i, j)
+        i += 1
+        j -= 1
     }
-    
-    
-    
-    
-    
-        
-
-
-        return result
     }

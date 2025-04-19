@@ -226,6 +226,8 @@ class dev {
         self.sallary = 5        //default sallary will be 5
         }
     
+    //can also give multi init
+    
     convenience init (name: String){
 
         self.init(name: name, sallary: 2000)
